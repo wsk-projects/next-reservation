@@ -20,10 +20,12 @@ const config: Config = {
             DEFAULT: "#EBF0FA", // 메뉴 배경 색상
           },
           background: {
-            DEFAULT: "#FFFFFF", // 항목, 내비게이션 기본 배경
-            2: "#E5EFFF", // 배경색 2
-            3: "#F7F7F7", // 배경색 3
-            4: "#F2F2F2", // 배경색 4
+            DEFAULT: "#F7FAFF", // 항목, 내비게이션 기본 배경
+            light: "#F2F2F2",
+          },
+          menu: {
+            DEFAULT: "#F7F7F7",
+            darker: "#E5E5E5",
           },
           text: {
             dark: "#111111", // 텍스트 기본 색상

@@ -1,11 +1,14 @@
+import Header from "./header/Header";
 import Main from "./main/Main";
 import Nav from "./nav/Nav";
 
 export default function DefaultLayout({ children }: { children: React.ReactNode }) {
   return (
     <div id="default-layout" className="h-screen flex flex-col">
-      <Nav />
+      <Header />
       <Main>{children}</Main>
+      <div className="pb-12"></div>
+      <Nav />
     </div>
   );
 }

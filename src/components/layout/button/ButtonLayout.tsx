@@ -1,3 +1,5 @@
+"use client";
+
 import { CommonProps } from "@/types/props/CommonProps";
 import { WrapperProps } from "@/types/props/WrapperProps";
 import clsx from "clsx";
