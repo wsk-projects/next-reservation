@@ -1,7 +1,9 @@
 import Stack from "@/components/common/Stack";
-import CircleLayout from "@/components/layout/circle/CircleLayout";
-import StudyCard from "@/components/ui/study/StudyListCard";
-import StudyManageCard from "@/components/ui/study/StudyManageCard";
+import Text from "@/components/common/Text";
+import Title from "@/components/common/Title";
+import CircleLayout from "@/components/layout/CircleLayout";
+import StudyCard from "@/components/ui/StudyListCard";
+import StudyManageCard from "@/components/ui/StudyManageCard";
 import { Studyroom } from "@/types/entity/Studyroom";
 import Link from "next/link";
 
@@ -28,19 +30,19 @@ export default function MypagePage() {
           {/* 설명란 */}
           <Stack.V className="w-full h-full p-2" justify="start" align="start">
             <Stack.H className="w-full justify-between">
-              <p className="font-semibold">닉네임</p>
+              <Title.h5 bold>닉네임</Title.h5>
               <Link href="/mypage/edit" className="rounded-xl px-2 py-0.5 bg-my-muted-3 whitespace-nowrap">
-                <p>수정</p>
+                <Text.sm>수정</Text.sm>
               </Link>
             </Stack.H>
-            <p className="text-sm">자기소개</p>
+            <Text.sm className="text-sm">자기소개</Text.sm>
           </Stack.V>
         </Stack.H>
       </Stack.V>
 
       {/* 내가 만든 스터디 영역 */}
       <Stack.V className="w-full p-4">
-        <p className="font-semibold">내가 만든 스터디</p>
+        <Title.h4 bold>내가 만든 스터디</Title.h4>
         {/* TODO: 실제 데이터 삽입 */}
         <StudyManageCard studyroom={_studyroom} />
         <StudyManageCard studyroom={_studyroom} />
@@ -48,7 +50,7 @@ export default function MypagePage() {
 
       {/* 신청/참여 현황 영역 */}
       <Stack.V className="w-full p-4">
-        <p className="font-semibold">신청/참여 현황</p>
+        <Title.h4 bold>신청/참여 현황</Title.h4>
         {/* TODO: 실제 데이터 삽입 */}
         <Link href="/study/_studyroom.id">
           <StudyCard studyroom={_studyroom} />

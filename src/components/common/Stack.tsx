@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import FlexLayout, { FlexLayoutProps } from "@/components/layout/flex/FlexLayout";
+import FlexLayout, { FlexLayoutProps } from "@/components/layout/FlexLayout";
 
 interface StackProps extends Omit<FlexLayoutProps, "direction"> {
   wrap?: boolean;

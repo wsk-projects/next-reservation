@@ -18,9 +18,9 @@ const config: Config = {
           },
           background: {
             DEFAULT: "#F7FAFF", // 항목, 내비게이션 기본 배경
-            2: "#e6eeff",
-            3: "#d6e4ff",
             4: "#c7dbff",
+            3: "#d6e4ff",
+            2: "#e6eeff",
             white: "#fcfcfc",
           },
           menu: {

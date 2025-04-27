@@ -1,6 +1,6 @@
 import Line from "@/components/common/Line";
 import Stack from "@/components/common/Stack";
-import StudyCard from "@/components/ui/study/StudyListCard";
+import StudyCard from "@/components/ui/StudyListCard";
 import { Studyroom } from "@/types/entity/Studyroom";
 import StudyApplyRender from "./StudyApplyRender";
 

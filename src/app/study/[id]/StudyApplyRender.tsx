@@ -1,10 +1,12 @@
 "use client";
 
 import Stack from "@/components/common/Stack";
-import ButtonLayout from "@/components/layout/button/ButtonLayout";
-import InputLayout from "@/components/layout/form/InputLayout";
-import ModalLayout from "@/components/layout/modal/ModalLayout";
-import Container from "@/components/layout/wrapper/Container";
+import Title from "@/components/common/Title";
+import ButtonLayout from "@/components/layout/ButtonLayout";
+import InputLayout from "@/components/layout/InputLayout";
+import TextareaLayout from "@/components/layout/TextareaLayout";
+import ModalLayout from "@/components/layout/ModalLayout";
+import Container from "@/components/layout/ContainerLayout";
 import Show from "@/components/util/Show";
 import { useState } from "react";
 
@@ -21,12 +23,12 @@ export default function StudyApplyRender() {
 
   return (
     <>
-      <Stack.V defaultStyle={false} className="w-full rounded-xl p-4 gap-4 bg-my-background-4">
+      <Stack.V defaultStyle={false} className="w-full rounded-xl p-4 gap-4 bg-my-background-2">
         {/* 이름 입력란 */}
         <Container>
-          <h2>
+          <Title.h4>
             이름<span className="text-red-700">*</span>
-          </h2>
+          </Title.h4>
           <InputLayout
             className="w-full h-8 rounded-md p-2"
             placeholder="이름을 입력해주세요.(필수)"
@@ -36,9 +38,9 @@ export default function StudyApplyRender() {
 
         {/* 연락처 입력란 */}
         <Container>
-          <h2>
+          <Title.h4>
             연락처<span className="text-red-700">*</span>
-          </h2>
+          </Title.h4>
           <InputLayout
             className="w-full h-8 rounded-md p-2"
             placeholder="연락처를 입력해주세요.(필수)"
@@ -48,8 +50,8 @@ export default function StudyApplyRender() {
 
         {/* 소개글 입력란 */}
         <Container>
-          <h2>간단 소개글</h2>
-          <textarea
+          <Title.h4>간단 소개글</Title.h4>
+          <TextareaLayout
             className="w-full h-24 rounded-md p-2 resize-none"
             placeholder="간단한 자기소개를 입력해주세요."
             onChange={() => {}}
@@ -64,7 +66,9 @@ export default function StudyApplyRender() {
 
       <Show when={isShow}>
         <ModalLayout className="left-0 bottom-24 right-0 w-3/4 rounded-lg px-6 py-3 mx-auto bg-my-positive-2">
-          <p className="text-my-positive">신청이 완료되었습니다!</p>
+          <Title.h4 className="text-my-positive" bold={false}>
+            신청이 완료되었습니다!
+          </Title.h4>
         </ModalLayout>
       </Show>
     </>

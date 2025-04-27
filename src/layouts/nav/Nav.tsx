@@ -1,8 +1,8 @@
-import { FloatingLayout } from "@/components/layout/wrapper/Floating";
+import { FloatingLayout } from "@/components/layout/FloatingLayout";
 import Link from "next/link";
 import { Book, Home, User } from "lucide-react";
 import Stack from "@/components/common/Stack";
-import CircleLayout from "@/components/layout/circle/CircleLayout";
+import CircleLayout from "@/components/layout/CircleLayout";
 
 const navLinks = [
   { href: "/", label: "홈", element: <Home className="w-6 h-6" /> },

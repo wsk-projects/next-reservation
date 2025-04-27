@@ -2,7 +2,7 @@ import Stack from "@/components/common/Stack";
 import { Studyroom } from "@/types/entity/Studyroom";
 import Link from "next/link";
 import SearchRender from "./SearchRender";
-import StudyCard from "@/components/ui/study/StudyListCard";
+import StudyCard from "@/components/ui/StudyListCard";
 
 const _studyList: Studyroom[] = [
   {
