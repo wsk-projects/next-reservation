@@ -4,8 +4,8 @@ import Link from "next/link";
 
 export default function StudyPage() {
   return (
-    <Wrapper className="pb-20">
-      <Stack.V className="w-full h-full rounded-lg p-2 mt-4 bg-stone-200">
+    <Wrapper>
+      <Stack.V className="w-full h-full rounded-lg p-2 bg-stone-200">
         <StudyCard />
         <StudyCard />
         <StudyCard />

@@ -7,7 +7,6 @@ export default function DefaultLayout({ children }: { children: React.ReactNode 
     <div id="default-layout" className="h-screen flex flex-col">
       <Header />
       <Main>{children}</Main>
-      <div className="pb-12"></div>
       <Nav />
     </div>
   );
