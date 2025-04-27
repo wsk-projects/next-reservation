@@ -2,6 +2,7 @@ import Stack from "@/components/common/Stack";
 import { Studyroom } from "@/types/entity/Studyroom";
 import SearchRender from "./render/SearchRender";
 import Link from "next/link";
+import Line from "@/components/common/Line";
 
 const _studyList: Studyroom[] = [
   {
@@ -70,7 +71,7 @@ function StudyCard({ studyroom }: { studyroom: Studyroom }) {
       <Stack.H className="w-full h-auto border border-my-muted-3 rounded-lg p-4 bg-white" align="start">
         <Stack.V className="w-5/6 h-full">
           <p className="font-semibold">{studyroom.title}</p>
-          <div className="w-full h-px bg-my-muted-2"></div>
+          <Line.H />
           <p className="text-sm">{studyroom.description}</p>
         </Stack.V>
         <Stack.V className="w-1/6 h-full" justify="start" align="center">
