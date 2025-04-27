@@ -1,3 +1,5 @@
+"use client";
+
 import { CommonProps, InputElementProps } from "@/types/props";
 import clsx from "clsx";
 

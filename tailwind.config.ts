@@ -16,12 +16,12 @@ const config: Config = {
           primary: {
             DEFAULT: "#4054CC", // 메인 헤더 색상
           },
-          secondary: {
-            DEFAULT: "#EBF0FA", // 메뉴 배경 색상
-          },
           background: {
             DEFAULT: "#F7FAFF", // 항목, 내비게이션 기본 배경
-            light: "#F2F2F2",
+            2: "#e6eeff",
+            3: "#d6e4ff",
+            4: "#c7dbff",
+            white: "#fcfcfc",
           },
           menu: {
             DEFAULT: "#F7F7F7",
@@ -41,6 +41,9 @@ const config: Config = {
           },
           muted: {
             DEFAULT: "#999999", // 비활성 색상
+            2: "#BFBFBF",
+            3: "#d9d9d9",
+            4: "#e6e6e6",
           },
         },
       },
