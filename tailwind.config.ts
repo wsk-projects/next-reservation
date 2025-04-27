@@ -12,6 +12,35 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        my: {
+          primary: {
+            DEFAULT: "#4054CC", // 메인 헤더 색상
+          },
+          secondary: {
+            DEFAULT: "#EBF0FA", // 메뉴 배경 색상
+          },
+          background: {
+            DEFAULT: "#FFFFFF", // 항목, 내비게이션 기본 배경
+            2: "#E5EFFF", // 배경색 2
+            3: "#F7F7F7", // 배경색 3
+            4: "#F2F2F2", // 배경색 4
+          },
+          text: {
+            dark: "#111111", // 텍스트 기본 색상
+            light: "#FAFAFA", // 텍스트 배경 색상
+          },
+          positive: {
+            DEFAULT: "#26CC66", // 긍정 강조 색상
+            2: "#E5F7EB", // 모달 긍정 배경
+          },
+          negative: {
+            DEFAULT: "#E53333", // 부정 강조 색상
+            2: "#FCEAEA", // 모달 부정 배경
+          },
+          muted: {
+            DEFAULT: "#999999", // 비활성 색상
+          },
+        },
       },
     },
   },
