@@ -11,6 +11,7 @@ export interface InputLayoutProps extends CommonProps, InputElementProps {
 export default function InputLayout({ id, className, value, onChange, placeholder, disabled }: InputLayoutProps) {
   return (
     <input
+      type="text"
       id={id}
       className={clsx(className)}
       value={value}
