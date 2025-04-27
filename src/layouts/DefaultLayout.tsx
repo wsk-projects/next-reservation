@@ -4,7 +4,7 @@ import Nav from "./nav/Nav";
 
 export default function DefaultLayout({ children }: { children: React.ReactNode }) {
   return (
-    <div id="default-layout" className="h-screen flex flex-col">
+    <div id="default-layout" className="min-h-screen flex flex-col">
       <Header />
       <Main>{children}</Main>
       <Nav />
