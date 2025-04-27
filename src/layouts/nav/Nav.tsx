@@ -14,7 +14,7 @@ export default function Nav() {
   return (
     <FloatingLayout
       id="navbar"
-      className="bottom-0 left-0 right-0 h-16 flex justify-between items-center px-6 gap-4 bg-my-menu"
+      className="bottom-0 left-0 right-0 h-16 border-t border-my-muted-3 flex justify-between items-center px-6 gap-4 bg-my-menu"
     >
       {navLinks.map((link) => (
         <NavLink key={link.href} href={link.href} label={link.label} element={link.element} />
