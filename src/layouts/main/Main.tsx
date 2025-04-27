@@ -1,6 +1,6 @@
 export default function Main({ children }: { children: React.ReactNode }) {
   return (
-    <div id="main" className="h-full flex flex-col justify-center items-center p-4">
+    <div id="main" className="flex-1 flex flex-col justify-start items-center p-4 py-20 bg-my-background">
       {children}
     </div>
   );
