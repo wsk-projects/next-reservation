@@ -21,21 +21,21 @@ jobs:
 
       # 2. 최신 이미지 pull
       - name: Pull image
-        run: docker pull ${{ secrets.DOCKERHUB_USERNAME }}/next-myutils:dev
+        run: docker pull ${{ secrets.DOCKERHUB_USERNAME }}/${{ github.event.repository.name }}:dev
 
       # 3. 기존 컨테이너 종료 및 제거
       - name: Stop and remove existing container
         run: |
-          docker stop next-myutils-dev || true
-          docker rm next-myutils-dev || true
+          docker stop ${{ github.event.repository.name }}-dev || true
+          docker rm ${{ github.event.repository.name }}-dev || true
 
       # 4. 새 컨테이너 실행
       - name: Run container
         run: |
           docker run -d \
-            --name next-myutils-dev \
+            --name ${{ github.event.repository.name }}-dev \
             -p 3000:3000 \
-            ${{ secrets.DOCKERHUB_USERNAME }}/next-myutils:dev
+            ${{ secrets.DOCKERHUB_USERNAME }}/${{ github.event.repository.name }}:dev
 
       # 5. 안 쓰는 이미지 정리
       - name: Prune unused images
