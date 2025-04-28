@@ -1,4 +1,4 @@
-name: CI - myutils-dev
+name: CI - develop
 
 on:
   pull_request:

@@ -1,4 +1,4 @@
-name: CD - myutils-dev
+name: CD - develop
 
 on:
   push:
@@ -34,7 +34,7 @@ jobs:
         run: |
           docker run -d \
             --name ${{ github.event.repository.name }}-dev \
-            -p 3000:3000 \
+            -p ${{ secrets.DOCKER_PORT_DEV }}:3000 \
             ${{ secrets.DOCKERHUB_USERNAME }}/${{ github.event.repository.name }}:dev
 
       # 5. 안 쓰는 이미지 정리
