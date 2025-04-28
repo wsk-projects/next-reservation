@@ -1,8 +1,8 @@
 import Stack from "@/components/common/Stack";
 import ButtonLayout from "@/components/layout/ButtonLayout";
-import CircleLayout from "@/components/layout/CircleLayout";
 import { FloatingLayout } from "@/components/layout/FloatingLayout";
-import { ArrowLeft, Bell } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
+import AlertButtonRender from "./AlertButtonRender";
 
 export default function Header({ title = "Header" }: { title?: string }) {
   return (
@@ -17,11 +17,7 @@ export default function Header({ title = "Header" }: { title?: string }) {
         <h1 className="text-xl">{title}</h1>
 
         {/* 알림 버튼 */}
-        <ButtonLayout className="w-10 h-10">
-          <CircleLayout className="w-full h-full bg-my-background/20">
-            <Bell className="text-my-background" />
-          </CircleLayout>
-        </ButtonLayout>
+        <AlertButtonRender />
       </Stack.H>
     </FloatingLayout>
   );
